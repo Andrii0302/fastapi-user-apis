@@ -1,0 +1,54 @@
+{% include 'layout.html' %}
+{% block content %}
+<div class="container">
+    <div class="card">
+        <div class="card-header">Register</div>
+        <div class="card-body">
+            <form id="registerForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" name="email" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="">Username</label>
+                        <input type="text" name="username" required class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="">First Name</label>
+                        <input type="text" name="firstname" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="">Last Name</label>
+                        <input type="text" name="lastname" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="">Role</label>
+                        <input type="text" name="role" required class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="">Phone number</label>
+                        <input type="text" name="phone_number" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" name="password" class="form-control" autocomplete="new-passsword" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Verify Password</label>
+                    <input type="password" name="password2" class="form-control" autocomplete="new-passsword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            <a href="/auth/login-page">Already have an account?</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

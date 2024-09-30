@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="{{ url_for('static', path ='/css/base.css')}}" text="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', path ='/css/bootstrap.css')}}" text="text/css">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    {% block content %} {% endblock %}
+    <script src="{{ url_for('static',path='/js/jquery-slim.js')}}"></script>
+    <script src="{{ url_for('static',path='/js/popper.js')}}"></script>
+    <script src="{{ url_for('static',path='/js/bootstrap.js')}}"></script>
+    <script src="{{ url_for('static',path='/js/base.js')}}" defer></script>
+</body>
+</html>
